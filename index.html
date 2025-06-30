@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spinner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>The Ultimate Randomizer</h1>
+        <p>Spin to win... or just to decide!</p>
+    </header>
+    <main>
+        <section class="wheel-container">
+            <h2>NFL Teams</h2>
+            <div id="team-display" class="text-display">Spin to pick a team!</div>
+            <div class="button-group">
+                <button id="spin-team-btn">Spin for Team</button>
+                <button id="quick-spin-team-btn">Quick Spin</button>
+            </div>
+            <div id="team-result" class="result"></div>
+        </section>
+
+        <section class="wheel-container">
+            <h2>US States</h2>
+            <div id="state-display" class="text-display">Spin to pick a state!</div>
+            <div class="button-group">
+                <button id="spin-state-btn">Spin for State</button>
+                <button id="quick-spin-state-btn">Quick Spin</button>
+            </div>
+            <div id="state-result" class="result"></div>
+        </section>
+
+        <section class="wheel-container">
+            <h2>Direction Arrow</h2>
+            <div class="arrow-wrapper">
+                <div id="direction-arrow" class="arrow"></div>
+            </div>
+            <div class="button-group">
+                <button id="spin-arrow-btn">Spin Arrow</button>
+                <button id="quick-spin-arrow-btn">Quick Spin</button>
+            </div>
+            <div id="arrow-result" class="result"></div>
+        </section>
+    </main>
+
+    <section class="action-buttons-container">
+        <button id="spin-all-btn">Spin Team & State</button>
+        <button id="generate-all-combinations-btn">Generate All 32 Combinations</button>
+        <button id="move-combination-btn" disabled>Move Combination Below</button>
+    </section>
+
+    <section class="picked-combinations-container">
+        <div class="list-header">
+            <h3>Picked Combinations</h3>
+            <div class="list-controls">
+                <button id="restore-wheels-btn">Restore All</button>
+                <button id="delete-combinations-btn">Delete Combinations</button>
+            </div>
+        </div>
+        <ul id="picked-list">
+            </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Randomizer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
